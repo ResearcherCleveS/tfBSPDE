@@ -69,4 +69,4 @@ for i in range(0, 3):
     df[:, i:i+1] = datalist[i]
     
 df = pd.DataFrame({"Channel_1": df[:, 0], "Channel_2": df[:, 1], "Channel_3": df[:, 2]})
-print(df)
+df
