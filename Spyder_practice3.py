@@ -16,7 +16,7 @@ from scipy.stats import norm
 from scipy.optimize import brentq
 from scipy.interpolate import griddata
 import plotly.graph_objects as go
-# %config InlineBackend.figure_formats='svg'
+
 
 x = np.linspace(-20, 20, 256)
 f = np.sin(x)/x
