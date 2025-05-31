@@ -49,7 +49,7 @@ st.pyplot(fig)
 #st.title('Time Fractional Black - Scholes Partial Differential Equation (tfBSPDE)')
 
 # data = pd.read_csv('Closed Loop Forecast Data.csv')
-data = pd.DataFrame(ClosedLoopForecastDatacsv)
+data = pd.DataFrame(Closed Loop Forecast Data.csv)
 fig, ax = plt.subplots(3, 1, figsize=(12, 10))
 #for i in range(0, data.columns.size):
 #    ax[i].plot(data[i+1].values);
