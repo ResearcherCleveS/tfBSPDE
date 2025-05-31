@@ -6,8 +6,6 @@ Created on Wed May 28 19:07:58 2025
 @author: sylvestercleveland
 """
 
-st.title("Author Sylvester Cleve")
-
 import numpy as np
 import streamlit as st
 import yfinance as yf
@@ -21,6 +19,8 @@ import plotly.graph_objects as go
 #import pandas as pd
 import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
+
+st.title("Author Sylvester Cleve")
 
 x = np.linspace(-20, 20, 256)
 f = np.sin(x)/(1e-8+x)
