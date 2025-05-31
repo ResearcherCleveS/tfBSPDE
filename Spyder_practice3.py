@@ -17,7 +17,7 @@ from scipy.optimize import brentq
 from scipy.interpolate import griddata
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
-%config InlineBackend.figure_formats = 'svg'
+InlineBackend.figure_formats = 'svg'
 
 st.title("Author Sylvester Cleve")
 
