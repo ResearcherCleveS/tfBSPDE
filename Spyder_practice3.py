@@ -22,7 +22,7 @@ import plotly.graph_objects as go
 
 x = np.linspace(-20, 20, 256)
 f = np.sin(x)/x
-plt.plot(x, f)
+go.plot(x, f)
 
 frqz = np.zeros(len(f))
 
@@ -30,12 +30,12 @@ for j, i in enumerate(f):
     if j%9 == 0:
         frqz[j] = i
 
-plt.plot(x, frqz, color='tab:red', linewidth=0.75)        
-import streamlit as st
+go.plot(x, frqz, color='tab:red', linewidth=0.75)        
+# import streamlit as st
 #import yfinance as yf
-import pandas as pd
-import numpy as np
-from datetime import timedelta
+# import pandas as pd
+# import numpy as np
+# from datetime import timedelta
 #from scipy.stats import norm
 #from scipy.optimize import brentq
 #from scipy.interpolate import griddata
@@ -46,7 +46,7 @@ from datetime import timedelta
 
 # data = pd.read_csv('Closed Loop Forecast Data.csv')
 data = pd.DataFrame(ClosedLoopForecastDatacsv)
-fig, ax = plt.subplots(3, 1, figsize=(12, 10))
+fig, ax = go.subplots(3, 1, figsize=(12, 10))
 #for i in range(0, data.columns.size):
 #    ax[i].plot(data[i+1].values);
 #plt.plot(data[0].values);
