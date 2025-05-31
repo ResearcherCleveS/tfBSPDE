@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 
 
 x = np.linspace(-20, 20, 256)
-f = np.sin(x)/x
+f = np.sin(x)/(1e-8+x)
 fig = plt.figure()
 plt.plot(x, f)
 st.pyplot(fig)
