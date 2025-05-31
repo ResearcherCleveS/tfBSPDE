@@ -34,7 +34,7 @@ go.plot(x, frqz, color='tab:red', linewidth=0.75)
 #import yfinance as yf
 # import pandas as pd
 # import numpy as np
-from datetime import timedelta
+# from datetime import timedelta
 #from scipy.stats import norm
 #from scipy.optimize import brentq
 #from scipy.interpolate import griddata
@@ -58,5 +58,5 @@ channel_1 = pd.Series(datalist)
 print(channel_1)
 go.plot(channel_1, color='b');
 # %%
-import streamlit as st
+# import streamlit as st
 st.title("Author Sylvester Cleve")
