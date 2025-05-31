@@ -30,10 +30,10 @@ for j, i in enumerate(f):
         frqz[j] = i
 
 go.plot(x, frqz, color='tab:red', linewidth=0.75)        
-import streamlit as st
+# import streamlit as st
 #import yfinance as yf
-import pandas as pd
-import numpy as np
+# import pandas as pd
+# import numpy as np
 from datetime import timedelta
 #from scipy.stats import norm
 #from scipy.optimize import brentq
@@ -48,7 +48,7 @@ data = pd.DataFrame(ClosedLoopForecastDatacsv)
 fig, ax = go.subplots(3, 1, figsize=(12, 10))
 #for i in range(0, data.columns.size):
 #    ax[i].plot(data[i+1].values);
-plt.plot(data[0].values);
+go.plot(data[0].values);
 datalist = []
 for i in data[0].values[1:-1]:
     datalist.append(float(i))
