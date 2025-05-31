@@ -17,7 +17,7 @@ import plotly.graph_objects as go
 # import numpy as np
 # import pandas as pd
 # import matplotlib.pyplot as plt
-%config InlineBackend.figure_formats='svg'
+# %config InlineBackend.figure_formats='svg'
 
 x = np.linspace(-20, 20, 256)
 f = np.sin(x)/x
