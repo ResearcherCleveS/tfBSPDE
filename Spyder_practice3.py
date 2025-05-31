@@ -6,6 +6,8 @@ Created on Wed May 28 19:07:58 2025
 @author: sylvestercleveland
 """
 
+st.title("Author Sylvester Cleve")
+
 import numpy as np
 import streamlit as st
 import yfinance as yf
@@ -16,16 +18,13 @@ from scipy.stats import norm
 from scipy.optimize import brentq
 from scipy.interpolate import griddata
 import plotly.graph_objects as go
+#import pandas as pd
 import matplotlib.pyplot as plt
-# config InlineBackend.figure_formats = 'svg'
-
-st.title("Author Sylvester Cleve")
+#%config InlineBackend.figure_formats='svg'
 
 x = np.linspace(-20, 20, 256)
-f = np.sin(x)/(1e-8+x)
-fig = plt.figure()
+f = np.sin(x)/x
 plt.plot(x, f)
-st.pyplot(fig)
 
 frqz = np.zeros(len(f))
 
@@ -33,8 +32,7 @@ for j, i in enumerate(f):
     if j%9 == 0:
         frqz[j] = i
 
-plt.plot(x, frqz, color='tab:red', linewidth=0.75)
-st.pyplot(fig)
+plt.plot(x, frqz, color='tab:red', linewidth=0.75)        
 # import streamlit as st
 #import yfinance as yf
 # import pandas as pd
@@ -48,7 +46,7 @@ st.pyplot(fig)
 # st.title('Implied Volatility Surface')
 #st.title('Time Fractional Black - Scholes Partial Differential Equation (tfBSPDE)')
 
-data = pd.read_csv('Closed Loop Forecast Data.csv')
+data = pd.read_csv('/Users/sylvestercleveland/Desktop/Closed Loop Forecast Data.csv')
 data = pd.DataFrame(data)
 fig, ax = plt.subplots(3, 1, figsize=(12, 10))
 #for i in range(0, data.columns.size):
@@ -57,7 +55,7 @@ fig, ax = plt.subplots(3, 1, figsize=(12, 10))
 datalist_1, datalist_2, datalist_3 = [], [], []
 datalist = [datalist_1, datalist_2, datalist_3]
 for i in range(0, len(data.columns)):
-    for j in data[i].values[1:-1]:
+    for j in data.values[:, i]:
         datalist[i].append(float(j))
     datalist[i] = pd.DataFrame({f"Channel_{i+1}": datalist[i]})
     ax[i].plot(datalist[i]);
@@ -68,5 +66,3 @@ for i in range(0, 3):
     
 df = pd.DataFrame({"Channel_1": df[0], "Channel_2": df[1], "Channel_3": df[2]})
 df
-
-
