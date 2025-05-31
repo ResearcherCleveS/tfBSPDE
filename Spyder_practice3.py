@@ -16,6 +16,7 @@ from scipy.stats import norm
 from scipy.optimize import brentq
 from scipy.interpolate import griddata
 import plotly.graph_objects as go
+import matplotlib.pyplot as plt
 
 
 x = np.linspace(-20, 20, 256)
