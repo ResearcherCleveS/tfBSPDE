@@ -63,7 +63,7 @@ for i in range(0, len(data.columns)):
         datalist[i].append(float(j))
     datalist[i] = pd.DataFrame({f"Channel_{i+1}": datalist[i]})
     ax[i].plot(datalist[i]);
-
+    st.pyplot(ax[i].plot(datalist[i]))
 df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
     df[:, i:i+1] = pd.DataFrame(datalist[i])
