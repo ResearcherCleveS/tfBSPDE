@@ -18,6 +18,7 @@ from scipy.interpolate import griddata
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 
+st.title("Author Sylvester Cleve")
 
 x = np.linspace(-20, 20, 256)
 f = np.sin(x)/(1e-8+x)
@@ -33,4 +34,38 @@ for j, i in enumerate(f):
 
 plt.plot(x, frqz, color='tab:red', linewidth=0.75)
 st.pyplot(fig)
-st.title("Author Sylvester Cleve")
+# import streamlit as st
+#import yfinance as yf
+# import pandas as pd
+# import numpy as np
+# from datetime import timedelta
+#from scipy.stats import norm
+#from scipy.optimize import brentq
+#from scipy.interpolate import griddata
+#import plotly.graph_objects as go
+
+# st.title('Implied Volatility Surface')
+#st.title('Time Fractional Black - Scholes Partial Differential Equation (tfBSPDE)')
+
+# data = pd.read_csv('Closed Loop Forecast Data.csv')
+data = pd.DataFrame(ClosedLoopForecastDatacsv)
+fig, ax = plt.subplots(3, 1, figsize=(12, 10))
+#for i in range(0, data.columns.size):
+#    ax[i].plot(data[i+1].values);
+#plt.plot(data[0].values);
+datalist_1, datalist_2, datalist_3 = [], [], []
+datalist = [datalist_1, datalist_2, datalist_3]
+for i in range(0, len(data.columns)):
+    for j in data[i].values[1:-1]:
+        datalist[i].append(float(j))
+    datalist[i] = pd.DataFrame({f"Channel_{i+1}": datalist[i]})
+    ax[i].plot(datalist[i]);
+
+df = np.zeros((len(datalist[0]), 3))
+for i in range(0, 3):
+    df[:, i:i+1] = pd.DataFrame(datalist[i])
+    
+df = pd.DataFrame({"Channel_1": df[0], "Channel_2": df[1], "Channel_3": df[2]})
+df
+
+
