@@ -27,6 +27,7 @@ f = np.sin(x)/(1e-8+x)
 
 fig = plt.figure()
 plt.plot(x, f)
+plt.title('Sinc function', x=.05, y=.93, color='tab:grey')
 st.pyplot(fig)
 
 frqz = np.zeros(len(f))
@@ -36,6 +37,7 @@ for j, i in enumerate(f):
         frqz[j] = i
 
 plt.plot(x, frqz, color='tab:red', linewidth=0.75)
+plt.title('Sinc function & select values', x=.05, y=.93, color='tab:grey')
 st.pyplot(fig)
 # import streamlit as st
 #import yfinance as yf
@@ -63,7 +65,6 @@ for i in range(0, len(data.columns)):
         datalist[i].append(float(j))
     datalist[i] = pd.DataFrame({f"Channel_{i+1}": datalist[i]})
     ax[i].plot(datalist[i]);
-    ax[i].set_title('Sinc function values', x=.5, y=.93, color='tab:grey')
 st.pyplot(fig)
 df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
