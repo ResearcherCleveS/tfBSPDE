@@ -63,7 +63,7 @@ for i in range(0, len(data.columns)):
         datalist[i].append(float(j))
     datalist[i] = pd.DataFrame({f"Channel_{i+1}": datalist[i]})
     ax[i].plot(datalist[i]);
-    ax[i].title($\textsf{Sinc function values}$, x=.5, y=.93, color='tab:grey')
+    ax[i].title(\textsf{Sinc function values}, x=.5, y=.93, color='tab:grey')
 st.pyplot(fig)
 df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
