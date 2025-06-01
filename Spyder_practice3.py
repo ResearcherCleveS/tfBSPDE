@@ -65,7 +65,7 @@ for i in range(0, len(data.columns)):
         datalist[i].append(float(j))
     datalist[i] = pd.DataFrame({f"Channel_{i+1}": datalist[i]})
     ax[i].plot(datalist[i]);
-    ax[i].set_ylabel(f"Channel {i+1}", rotation=0, x=.95, fontweight='bold')
+    ax[i].set_ylabel(f"Channel {i+1}", rotation=0, y=.95, fontweight='bold')
     # ax[i].set_yticks([])
 st.pyplot(fig)
 df = np.zeros((len(datalist[0]), 3))
