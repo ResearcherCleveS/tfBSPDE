@@ -54,7 +54,7 @@ st.pyplot(fig)
 
 data = pd.read_csv('Closed Loop Forecast Data.csv')
 data = pd.DataFrame(data)
-fig, ax = plt.subplots(3, 1, figsize=(12, 10))
+fig2, ax = plt.subplots(3, 1, figsize=(12, 10))
 #for i in range(0, data.columns.size):
 #    ax[i].plot(data[i+1].values);
 #plt.plot(data[0].values);
@@ -65,7 +65,7 @@ for i in range(0, len(data.columns)):
         datalist[i].append(float(j))
     datalist[i] = pd.DataFrame({f"Channel_{i+1}": datalist[i]})
     ax[i].plot(datalist[i]);
-st.pyplot(fig)
+st.pyplot(fig2)
 df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
     df[:, i:i+1] = datalist[i]
