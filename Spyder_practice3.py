@@ -72,5 +72,5 @@ df = pd.DataFrame({"Channel_1": df[:, 0], "Channel_2": df[:, 1], "Channel_3": df
 st.info("Testing my deep learning app! Here's some sample wave data.")
 with st.expander('Wave Data'):
     st.write('**Raw wave data samples**')
-    df = pd.DataFrame({"Channel_1": df[:, 0], "Channel_2": df[:, 1], "Channel_3": df[:, 2]})
+    #df = pd.DataFrame({"Channel_1": df[:, 0], "Channel_2": df[:, 1], "Channel_3": df[:, 2]})
     df
