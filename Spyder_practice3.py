@@ -27,7 +27,7 @@ f = np.sin(x)/(1e-8+x)
 
 fig = plt.figure()
 plt.plot(x, f)
-plt.title('Sinc function', x=.15, y=.93, color='tab:grey')
+plt.title('Sinc function', x=.15, y=.85, color='tab:grey')
 st.pyplot(fig)
 
 frqz = np.zeros(len(f))
@@ -37,7 +37,7 @@ for j, i in enumerate(f):
         frqz[j] = i
 
 plt.plot(x, frqz, color='tab:red', linewidth=0.75)
-plt.title('Sinc function & select values', x=.15, y=.93, color='tab:grey', fontsize=7)
+plt.title('Sinc function & select values', x=.15, y=.85, color='tab:grey', fontsize=15)
 st.pyplot(fig)
 # import streamlit as st
 #import yfinance as yf
