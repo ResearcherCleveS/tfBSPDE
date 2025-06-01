@@ -68,8 +68,9 @@ df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
     df[:, i:i+1] = datalist[i]
     
-df = pd.DataFrame({"Channel_1": df[:, 0], "Channel_2": df[:, 1], "Channel_3": df[:, 2]})
-st.info("Testing my deep learning app! Here's some sample wave data.")
-with st.expander("Wave Data"):
-    st.write("**Raw wave data samples**")
+#df = pd.DataFrame({"Channel_1": df[:, 0], "Channel_2": df[:, 1], "Channel_3": df[:, 2]})
+st.info('Testing my deep learning app! Here's some sample wave data.')
+with st.expander('Wave Data'):
+    st.write('**Raw wave data samples**')
+    df = pd.DataFrame({"Channel_1": df[:, 0], "Channel_2": df[:, 1], "Channel_3": df[:, 2]})
     df
