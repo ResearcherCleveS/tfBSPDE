@@ -27,7 +27,7 @@ f = np.sin(x)/(1e-8+x)
 
 fig = plt.figure()
 plt.plot(x, f)
-plt.title('Sinc function', x=.15, y=.88, color='tab:grey')
+plt.title('Sinc function', x=.15, y=.88, color='tab:blue')
 st.pyplot(fig)
 
 frqz = np.zeros(len(f))
