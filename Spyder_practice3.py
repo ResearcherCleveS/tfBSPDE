@@ -37,7 +37,7 @@ for j, i in enumerate(f):
         frqz[j] = i
 
 plt.plot(x, frqz, color='tab:red', linewidth=0.75)
-plt.title('Sinc function & select values', x=.05, y=.93, color='tab:grey')
+plt.title('Sinc function & select values', x=.05, y=.93, color='tab:grey', fontsize=15)
 st.pyplot(fig)
 # import streamlit as st
 #import yfinance as yf
