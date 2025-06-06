@@ -21,7 +21,7 @@ import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
 st.title("Author Sylvester Cleve") 
-st.subheader("And Hinton's the Greatest Ever do it!!")
+st.subheader("And Hinton's the Greatest!!")
 
 x = np.linspace(-20, 20, 256)
 f = np.sin(x)/(1e-8+x)
