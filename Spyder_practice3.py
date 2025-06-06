@@ -38,7 +38,7 @@ for j, i in enumerate(f):
         frqz[j] = i
 
 # plt.plot(x, frqz, color='tab:red', linewidth=0.75)
-st.line_chart(x, frqz)
+st.line_chart(frqz)
 plt.title('Sinc function & select values', x=.23, y=.88, color='tab:red', fontsize=10.5)
 st.pyplot(fig)
 # import streamlit as st
