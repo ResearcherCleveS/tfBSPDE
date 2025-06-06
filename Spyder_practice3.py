@@ -31,7 +31,7 @@ with st.sidebar:
     st.caption("**<p style='text:align-center'>Fri June 6 2:54 PM NYC Time</p>**", unsafe_allow_html=True) 
     st.caption("*<p style='text:align-center'> KC [Special Memeber♥️💠] </p>*", unsafe_allow_html=True)
     st.divider()
-    with st.expander("*Mermaid Cup AKA Expander Nams*"): 
+    with st.expander("*Mermaid Cup AKA Expander Name*"): 
         st.write("*KC [Mood♥️💠]*")
 st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
 st.divider()
