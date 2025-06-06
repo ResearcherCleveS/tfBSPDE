@@ -20,10 +20,13 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
-st.title("Author ResearcherCleveS")
-st.header("Hinton & ResearcherCleveS are Successes!")
-st.subheader("*KC [Special Member♥️💠]*")
-st.caption("*<p style = 'text:align-center'> Made w/ Love, Vester Et als </p>*", unsafe_allow_html=True)
+st.title("Author ResearcherCleveS 👑")
+if st.button("Abstract"):
+    st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
+    st.divider()
+    st.header("Hinton & ResearcherCleveS are Successes!")
+    st.subheader("*KC [Special Member♥️💠]*")
+    st.caption("*<p style = 'text:align-center'> Made w/ Love, Vester Et als </p>*", unsafe_allow_html=True)
 with st.sidebar:
     st.title("**AI plus Partial Differential Eqn ie Physics Informed Neural Network (PINN) demonstration.**")
     st.write("**We'll explore implementing a PINN to optimize the efficiency and application of the Black Scholes Formula.**")
@@ -36,8 +39,9 @@ with st.sidebar:
         st.write("*KC [Mood♥️💠]*")
     with st.expander("*KC [Mood♥️💠]*"):
         st.success("*Kaliff AKA KC [Mood♥️💠]*")
-st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
-st.divider()
+# if st.button("Abstract"):
+# st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
+# st.divider()
 
 x = np.linspace(-20, 20, 256)
 f = np.sin(x)/(1e-8+x)
