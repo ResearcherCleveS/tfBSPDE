@@ -76,7 +76,7 @@ st.pyplot(fig)
 # [st.line_chart(datalist[i]) for i in range(0, 3)]
 for i in range(0, np.size(datalist, 0)):
     st.line_chart(datalist[i])
-    st.title(f"Channel {i}", rotation=0, fontweight="bold")
+    plt.ylabel(f"Channel {i}", rotation=0, fontweight="bold")
 st.success(np.shape(datalist))
 st.success(np.size(datalist, 0))
 df = np.zeros((len(datalist[0]), 3))
