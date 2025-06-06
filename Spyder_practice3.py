@@ -21,8 +21,8 @@ import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
 st.title("Author Sylvester Cleve")
-st.header("**Hinton & ResearcherCleveS are Successes!**")
-st.subheader("**KC Special Member♥️💠**")
+st.header("Hinton & ResearcherCleveS are Successes!")
+st.subheader("KC Special Member♥️💠")
 st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
 
 x = np.linspace(-20, 20, 256)
