@@ -5,3 +5,5 @@ numpy
 scipy
 plotly
 matplotlib
+langchain
+dotenv
