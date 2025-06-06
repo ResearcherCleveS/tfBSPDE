@@ -73,7 +73,7 @@ for i in range(0, len(data.columns)):
     # ax[i].set_yticks([])
 st.pyplot(fig)
 st.line_chart(datalist[0])
-st.print(np.shape(datalist))
+st.success(np.shape(datalist))
 df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
     df[:, i:i+1] = datalist[i]
