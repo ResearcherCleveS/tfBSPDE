@@ -41,7 +41,7 @@ with st.sidebar:
         st.divider()
         st.write("*KC [Mood♥️💠]*")
     with st.expander("*KC [Mood♥️💠]*"):
-        st.success("*K*** AKA KC [Mood♥️💠]*")
+        st.success("*K\*** AKA KC [Mood♥️💠]*")
 # if st.button("Abstract"):
 # st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
 # st.divider()
