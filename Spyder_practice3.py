@@ -42,7 +42,7 @@ with st.sidebar:
         st.write("*KC [Mood♥️💠]*")
     with st.expander("*KC [Mood♥️💠]*"):
         st.success("*K. Corera AKA KC [Mood♥️💠]*")
-    with st.expander():
+    with st.expander("What are the steps of EDA"):
         st.write(llm('What are the steps of EDA'))
     
 # if st.button("Abstract"):
