@@ -21,8 +21,8 @@ import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
 st.title("Author ResearcherCleveS 👑")
-if st.button("**Abstract**"):
-    st.header("Hinton & ResearcherCleveS are Successes!")
+st.button("**Abstract**"):
+st.header("Hinton & ResearcherCleveS are Successes!")
     st.subheader("*KC [Special Member♥️💠]*")
     st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
     st.caption("*<p style = 'text:align-center'> Made w/ Love, Vester Et als </p>*", unsafe_allow_html=True)
