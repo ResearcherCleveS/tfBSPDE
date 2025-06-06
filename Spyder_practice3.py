@@ -91,6 +91,7 @@ for i in range(0, np.size(datalist, 0)):
 st.success(np.shape(datalist))
 st.success(np.size(datalist, 0))
 st.write(np.random.randint(-11, 11, np.size(datalist, 0)))
+np.random.randint(-11, 11, np.size(datalist, 0))
 df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
     df[:, i:i+1] = datalist[i]
