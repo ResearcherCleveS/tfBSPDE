@@ -20,7 +20,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
-st.title("Author Sylvester Cleve & Hinton's the Greatest❣️💠") 
+st.title("Author Sylvester Cleve") 
 st.success("Hinton & ResearcherCleveS are Successes!")
 
 x = np.linspace(-20, 20, 256)
@@ -71,7 +71,8 @@ for i in range(0, len(data.columns)):
     ax[i].plot(datalist[i]);
     ax[i].set_ylabel(f"Channel {i+1}", rotation=0, fontweight='bold')
     # ax[i].set_yticks([])
-st.pyplot(fig)
+# st.pyplot(fig)
+st.line_chart(fig)
 df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
     df[:, i:i+1] = datalist[i]
