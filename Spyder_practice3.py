@@ -42,6 +42,9 @@ with st.sidebar:
         st.write("*KC [Mood♥️💠]*")
     with st.expander("*KC [Mood♥️💠]*"):
         st.success("*K. Corera AKA KC [Mood♥️💠]*")
+    with st.expander():
+        st.write(llm('What are the steps of EDA'))
+    
 # if st.button("Abstract"):
 # st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
 # st.divider()
