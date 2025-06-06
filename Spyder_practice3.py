@@ -71,8 +71,8 @@ for i in range(0, len(data.columns)):
     ax[i].plot(datalist[i]);
     ax[i].set_ylabel(f"Channel {i+1}", rotation=0, fontweight='bold')
     # ax[i].set_yticks([])
-# st.pyplot(fig)
-st.line_chart(fig)
+st.pyplot(fig)
+st.line_chart(datalist[0])
 df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
     df[:, i:i+1] = datalist[i]
