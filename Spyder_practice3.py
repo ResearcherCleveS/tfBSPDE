@@ -74,8 +74,7 @@ for i in range(0, len(data.columns)):
 st.pyplot(fig)
 [st.line_chart(datalist[i]) for i in range(0, np.shape(datalist, 0))]
 
-st.success(np.shape(datalist), f"there are 3 190 by 1 waveform data. And
-np.shape(datalist, 0): {np.shape(datalist, 0)}")
+st.success(np.shape(datalist), f"there are 3 190 by 1 waveform data. And np.shape(datalist, 0): {np.shape(datalist, 0)}")
 df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
     df[:, i:i+1] = datalist[i]
