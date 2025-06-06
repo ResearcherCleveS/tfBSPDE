@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 st.title("Author Sylvester Cleve")
 st.header("Hinton & ResearcherCleveS are Successes!")
 st.subheader("**KC Special Member♥️💠**")
-st.success("Hinton & ResearcherCleveS, KC are Successes!")
+st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
 
 x = np.linspace(-20, 20, 256)
 f = np.sin(x)/(1e-8+x)
