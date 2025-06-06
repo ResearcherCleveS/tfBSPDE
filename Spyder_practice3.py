@@ -37,7 +37,8 @@ for j, i in enumerate(f):
     if j%9 == 0:
         frqz[j] = i
 
-plt.plot(x, frqz, color='tab:red', linewidth=0.75)
+# plt.plot(x, frqz, color='tab:red', linewidth=0.75)
+st.line_chart(x, frqz)
 plt.title('Sinc function & select values', x=.23, y=.88, color='tab:red', fontsize=10.5)
 st.pyplot(fig)
 # import streamlit as st
@@ -74,7 +75,7 @@ for i in range(0, len(data.columns)):
 st.pyplot(fig)
 [st.line_chart(datalist[i]) for i in range(0, 3)]
 
-st.success(np.shape(datalist), f"there are 3 190 by 1 waveform data. And np.shape(datalist, 0): {np.shape(datalist, 0)}")
+st.success(np.shape(datalist), "there are 3 190 by 1 waveform data. And np.shape(datalist, 0):" np.shape(datalist, 0))
 df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
     df[:, i:i+1] = datalist[i]
