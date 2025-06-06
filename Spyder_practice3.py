@@ -34,7 +34,7 @@ with st.sidebar:
     with st.expander("*Mermaid Cup AKA Expander Name*"):
         st.divider()
         st.write("*KC [Mood♥️💠]*")
-    with st.expander("KC [Mood♥️💠]"):
+    with st.expander("*KC [Mood♥️💠]*"):
         st.success("*Kaliff AKA KC [Mood♥️💠]*")
 st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
 st.divider()
