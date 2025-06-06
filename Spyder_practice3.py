@@ -20,9 +20,9 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
-st.title("Author Sylvester Cleve")
+st.title("Author ResearcherCleveS")
 st.header("Hinton & ResearcherCleveS are Successes!")
-st.subheader("*KC [Special Member♥️💠]*")
+st.subheader("*KC [Special Member♥💠]*")
 st.caption("*<p style = 'text:align-center'> Made w/ Love, Vester Et als </p>*", unsafe_allow_html=True)
 with st.sidebar:
     st.title("**AI plus Partial Differential Eqn ie Physics Informed Neural Network (PINN) demonstration.**")
