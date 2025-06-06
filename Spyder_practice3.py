@@ -22,7 +22,7 @@ import matplotlib.pyplot as plt
 
 st.title("Author Sylvester Cleve")
 st.header("Hinton & ResearcherCleveS are Successes!")
-st.header("*<p style = 'text:align-center'>KC [Special Member♥️💠] </p>*", unsafe_allow_html=True)
+st.write("*<p style = 'text:align-center'>KC [Special Member♥️💠] </p>*", unsafe_allow_html=True)
 st.caption("*<p style = 'text:align-center'> Made w/ Love, Vester Et als </p>*", unsafe_allow_html=True)
 with st.sidebar:
     st.title("**AI plus Partial Differential Eqn ie Physics Informed Neural Network (PINN) demonstration.**")
