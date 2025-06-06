@@ -21,12 +21,12 @@ import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
 st.title("Author ResearcherCleveS 👑")
-st.button("**Abstract**")
-st.header("Hinton & ResearcherCleveS are Successes!")
-st.subheader("*KC [Special Member♥️💠]*")
-st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
-st.caption("*<p style = 'text:align-center'> Made w/ Love, Vester Et als </p>*", unsafe_allow_html=True)
-st.divider()
+if st.button("**Abstract**"):
+    st.header("Hinton & ResearcherCleveS are Successes!")
+    st.subheader("*KC [Special Member♥️💠]*")
+    st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
+    st.caption("*<p style = 'text:align-center'> Made w/ Love, Vester Et als </p>*", unsafe_allow_html=True)
+    st.divider()
 with st.sidebar:
     st.title("**AI plus Partial Differential Eqn ie Physics Informed Neural Network (PINN) demonstration.**")
     st.write("**We'll explore implementing a PINN to optimize the efficiency and application of the Black Scholes Formula.**")
