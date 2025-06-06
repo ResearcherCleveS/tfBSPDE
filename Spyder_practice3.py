@@ -22,13 +22,14 @@ import matplotlib.pyplot as plt
 
 st.title("Author ResearcherCleveS")
 st.header("Hinton & ResearcherCleveS are Successes!")
-st.subheader("*KC [Special Member♥💠]*")
+st.subheader("*KC [Special Member💠]*")
 st.caption("*<p style = 'text:align-center'> Made w/ Love, Vester Et als </p>*", unsafe_allow_html=True)
 with st.sidebar:
     st.title("**AI plus Partial Differential Eqn ie Physics Informed Neural Network (PINN) demonstration.**")
     st.write("**We'll explore implementing a PINN to optimize the efficiency and application of the Black Scholes Formula.**")
-    st.caption("**Fri June 6 2:54 PM [ Brain on Sir C🐫rter 🍳 like drugs ] Sike!**")
-    st.caption("*<p style='text:align-center'> KC [Special Memeber♥️💠] </p>*", unsafe_allow_html=True)
+    # st.caption("**Fri June 6 2:54 PM [ Brain on Sir C🐫rter 🍳 like drugs ] Sike!**")
+    st.caption("**Fri June 6 2:54 PM NYC Time**")
+    st.caption("*<p style='text:align-center'> KC [Special Memeber💠] </p>*", unsafe_allow_html=True)
     st.divider()
 st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
 st.divider()
