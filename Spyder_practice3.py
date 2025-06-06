@@ -24,7 +24,8 @@ st.title("Author Sylvester Cleve")
 st.header("Hinton & ResearcherCleveS are Successes!")
 st.subheader("KC Special Member♥️💠")
 with st.sidebar:
-    st.title("**$\sf AI plus Partial Differential Eqn ie Physics Informed Neural Network (PINN) demonstration.$**")
+    st.title("**AI plus Partial Differential Eqn ie Physics Informed Neural Network (PINN) demonstration.**")
+    st.write("**We'll explore implementing a PINN to optimize the efficiency and application of the Black Scholes Formula.**")
 st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
 
 x = np.linspace(-20, 20, 256)
