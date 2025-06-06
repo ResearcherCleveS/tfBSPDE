@@ -75,7 +75,7 @@ for i in range(0, len(data.columns)):
 st.pyplot(fig)
 [st.line_chart(datalist[i]) for i in range(0, 3)]
 
-st.success(np.shape(datalist), np.shape(datalist, 0))
+st.success(np.shape(datalist), np.size(datalist, 0))
 df = np.zeros((len(datalist[0]), 3))
 for i in range(0, 3):
     df[:, i:i+1] = datalist[i]
