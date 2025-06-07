@@ -21,12 +21,12 @@ import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
 from langchain import llms
-from langchain import OpenAI
+# from langchain import OpenAI
 from langchain import agents #creat_pandas_dataframe_agent
 from dotenv import load_dotenv, find_dotenv 
 
 # llm model
-llm = openai(temperature=0)
+llm = OpenAI(temperature=0)
 st.title("Author ResearcherCleveS 👑")
 if st.button("**Abstract**"):
     st.header("Hinton & ResearcherCleveS are Successes!")
