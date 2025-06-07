@@ -86,6 +86,7 @@ with st.sidebar:
     # Doesn't work w/ out custom function and programming: if st.button("*Add File*"):
     #     user_csv = st.file_uploader("Upload your file here", type="csv")
     # st.file_uploader("Upload your file here", type="csv")
+    st.write(df.describe())
     st.divider()
     with st.expander("*Mermaid Cup AKA Expander Name*"):
         st.divider()
