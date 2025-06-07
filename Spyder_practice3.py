@@ -21,6 +21,7 @@ import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
 import os
+from apikey import apikey
 from langchain import llms
 from langchain.llms import OpenAI
 from langchain import agents #creat_pandas_dataframe_agent
