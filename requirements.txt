@@ -6,6 +6,7 @@ scipy
 plotly
 matplotlib
 langchain
+langchain_community
 llms
 agents
 openai
