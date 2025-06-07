@@ -22,6 +22,7 @@ import matplotlib.pyplot as plt
 
 from langchain import llms
 from langchain import agents #creat_pandas_dataframe_agent
+from langchain.agents import creat_pandas_dataframe_agent
 from dotenv import load_dotenv, find_dotenv 
 
 st.title("Author ResearcherCleveS 👑")
