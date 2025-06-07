@@ -22,7 +22,6 @@ import matplotlib.pyplot as plt
 
 from langchain import llms
 from langchain import agents #creat_pandas_dataframe_agent
-from langchain_community.llms import OpenAI
 from dotenv import load_dotenv, find_dotenv 
 
 st.title("Author ResearcherCleveS 👑")
