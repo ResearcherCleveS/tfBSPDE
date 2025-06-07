@@ -9,5 +9,4 @@ langchain
 openai
 create_pandas_dataframe_agent
 python-dotenv
-load_dotenv
-find_dotenv
+
