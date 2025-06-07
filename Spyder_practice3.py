@@ -44,9 +44,9 @@ if st.session_state.clicked[1]:
 
     user_csv = st.file_uploader("Upload your file here", type="csv")
 
-if user_csv != None:
-    user_csv.seek(0)
-    df = pd.read_csv(user_csv, low_memory=False)
+    if user_csv != None:
+        user_csv.seek(0)
+        df = pd.read_csv(user_csv, low_memory=False)
 
 # llm model
 # llm = OpenAI(temperature=0)
