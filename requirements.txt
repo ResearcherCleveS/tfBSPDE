@@ -6,10 +6,5 @@ scipy
 plotly
 matplotlib
 langchain
-langchain_community
-llms
-agents
-OpenAI
-create_pandas_dataframe_agent
 python-dotenv
 
