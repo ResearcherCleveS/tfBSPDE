@@ -34,7 +34,7 @@ from dotenv import load_dotenv, find_dotenv
 if 'clicked' not in st.session_state:
     st.session_state.clicked={1: False}
 
-#Function to upate the value in session state:
+#Function to update the value in session state:
 def clicked(button):
     st.session_state.clicked[button]=True
 st.button("Let's get started", on_click = clicked, args=[1])
@@ -44,7 +44,7 @@ if st.session_state.clicked[1]:
 
     user_csv = st.file_uploader("Upload your file here", type="csv")
 
-if user_csv is not None:
+if user_csv != None:
     user_csv.seek(0)
     df = pd.read_csv(user_csv, low_memory=False)
 
