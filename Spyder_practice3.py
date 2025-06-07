@@ -87,6 +87,7 @@ with st.sidebar:
     #     user_csv = st.file_uploader("Upload your file here", type="csv")
     # st.file_uploader("Upload your file here", type="csv")
     # st.subheader("*Description*")
+    st.header("*Description*")
     st.write("*Description*", df.describe())
     st.divider()
     with st.expander("*Mermaid Cup AKA Expander Name*"):
