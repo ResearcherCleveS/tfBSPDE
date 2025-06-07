@@ -9,7 +9,7 @@ langchain
 langchain_community
 llms
 agents
-openai
+OpenAI
 create_pandas_dataframe_agent
 python-dotenv
 
