@@ -38,7 +38,7 @@ if 'clicked' not in st.session_state:
 def clicked(button):
     st.session_state.clicked[button]=True
 st.button("Let's get started", on_click = clicked, args=[1])
-st.session_state.clicked[1]:
+if st.session_state.clicked[1]:
     st.header('Exploratory Data Analysis Part')
     st.subheader('Solution')
 
