@@ -81,7 +81,7 @@ with st.sidebar:
             user_csv.seek(0)
             df = pd.read_csv(user_csv, low_memory=False)
             st.subheader("*Data Description*")
-            st.write(df.describe())
+            st.write(df.describe().head())
             # Doesn't work w/ out custom function and programming:
             #     st.file_uploader("Upload your file here", type="csv")
 
