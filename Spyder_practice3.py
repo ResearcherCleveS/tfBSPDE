@@ -70,19 +70,20 @@ with st.sidebar:
     #Function to update the value in session state:
     def clicked(button):
         st.session_state.clicked[button]=True
-    st.button("Let's get started", on_click = clicked, args=[1])
+    st.button("*Add File*", on_click = clicked, args=[1])
     if st.session_state.clicked[1]:
-        st.header('Exploratory Data Analysis Part')
+        st.header('Stock Market Data Analysis')
         st.subheader('Solution')
 
         user_csv = st.file_uploader("Upload your file here", type="csv")
 
         if user_csv != None:
             user_csv.seek(0)
-            df = pd.read_csv(user_csv, low_memory=False)
+            # df = pd.read_csv(user_csv, low_memory=False)
+            st.file_uploader("Upload your file here", type="csv")
 
-    if st.button("*Add File*"):
-        user_csv = st.file_uploader("Upload your file here", type="csv")
+    # Doesn't work w/ out custom function and programming: if st.button("*Add File*"):
+    #     user_csv = st.file_uploader("Upload your file here", type="csv")
     # st.file_uploader("Upload your file here", type="csv")
     st.divider()
     with st.expander("*Mermaid Cup AKA Expander Name*"):
