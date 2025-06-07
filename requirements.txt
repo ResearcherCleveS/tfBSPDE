@@ -5,6 +5,7 @@ numpy
 scipy
 plotly
 matplotlib
+os
 langchain
 langchain_community
 openai
