@@ -58,7 +58,7 @@ if st.button("**Abstract**"):
     st.caption("*<p style = 'text:align-center'> Made w/ ♥️ by Vester Et als </p>*", unsafe_allow_html=True)
     st.divider()
 with st.sidebar:
-    st.title("**AI plus Partial Differential Eqn ie Physics Informed Neural Network (PINN) demonstration.**")
+    st.title("**AI plus Partial Differential Eqns ie Physics Informed Neural Network (PINN) demonstration.**")
     st.write("**We'll explore implementing a PINN to optimize the efficiency and application of the Black Scholes Formula.**")
     # st.caption("**Fri June 6 2:54 PM [ Brain on Sir C🐫rter 🍳 like drugs ] Sike!**")
     st.caption("**<p style='text:align-center'>Fri June 6 2:54 PM NYC Time</p>**", unsafe_allow_html=True) 
