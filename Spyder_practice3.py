@@ -27,7 +27,8 @@ from langchain.llms import OpenAI
 from langchain import agents #creat_pandas_dataframe_agent
 from dotenv import load_dotenv, find_dotenv 
 
-# os.environ("OPEN_API_KEY")
+os.environ["OPEN_API_KEY"] = apikey
+load_dotenv(find_dotenv())
 
 # llm model
 llm = OpenAI(temperature=0)
