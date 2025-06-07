@@ -80,7 +80,8 @@ with st.sidebar:
         if user_csv != None:
             user_csv.seek(0)
             df = pd.read_csv(user_csv, low_memory=False)
-            # st.file_uploader("Upload your file here", type="csv")
+            # Doesn't work w/ out custom function and programming:
+            #     st.file_uploader("Upload your file here", type="csv")
 
     # Doesn't work w/ out custom function and programming: if st.button("*Add File*"):
     #     user_csv = st.file_uploader("Upload your file here", type="csv")
