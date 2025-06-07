@@ -30,23 +30,23 @@ from dotenv import load_dotenv, find_dotenv
 # os.environ['OPEN_API_KEY'] = apikey
 # load_dotenv(find_dotenv())
 
-#Initialise the key in session state if 'clicked' not in st.session_state:
+#Initialize the key in session state if 'clicked' not in st.session_state:
 if 'clicked' not in st.session_state:
     st.session_state.clicked={1: False}
 
-#Function to upate the value in session state def clicked (button):
+#Function to upate the value in session state:
 def clicked(button):
     st.session_state.clicked[button]=True
 st.button("Let's get started", on_click = clicked, args=[1])
 st.session_state.clicked[1]:
     st.header('Exploratory Data Analysis Part')
-    st.subheader ('Solution')
+    st.subheader('Solution')
 
-    user_csv = st.file_uploader("Upload your file here", type="csv" )
+    user_csv = st.file_uploader("Upload your file here", type="csv")
 
 if user_csv is not None:
-    user_csv. seek (0)
-    df = pd. read_csv(user_csv, low_memory=False)
+    user_csv.seek(0)
+    df = pd.read_csv(user_csv, low_memory=False)
 
 # llm model
 # llm = OpenAI(temperature=0)
