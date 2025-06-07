@@ -5,6 +5,6 @@ numpy
 scipy
 plotly
 matplotlib
-langchain.llms
-langchain.agents
-dotenv
+from langchain.llms import OpenAI
+from langchain.agents import create_pandas_dataframe_agent
+from dotenv import load_dotenv, find_dotenv
