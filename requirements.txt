@@ -6,6 +6,8 @@ scipy
 plotly
 matplotlib
 langchain
+llms
+agents
 openai
 create_pandas_dataframe_agent
 python-dotenv
