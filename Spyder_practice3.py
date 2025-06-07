@@ -30,23 +30,23 @@ from dotenv import load_dotenv, find_dotenv
 # os.environ['OPEN_API_KEY'] = apikey
 # load_dotenv(find_dotenv())
 
-#Initialize the key in session state if 'clicked' not in st.session_state:
-if 'clicked' not in st.session_state:
-    st.session_state.clicked={1: False}
+# #Initialize the key in session state if 'clicked' not in st.session_state:
+# if 'clicked' not in st.session_state:
+#     st.session_state.clicked={1: False}
 
-#Function to update the value in session state:
-def clicked(button):
-    st.session_state.clicked[button]=True
-st.button("Let's get started", on_click = clicked, args=[1])
-if st.session_state.clicked[1]:
-    st.header('Exploratory Data Analysis Part')
-    st.subheader('Solution')
+# #Function to update the value in session state:
+# def clicked(button):
+#     st.session_state.clicked[button]=True
+# st.button("Let's get started", on_click = clicked, args=[1])
+# if st.session_state.clicked[1]:
+#     st.header('Exploratory Data Analysis Part')
+#     st.subheader('Solution')
 
-    user_csv = st.file_uploader("Upload your file here", type="csv")
+#     user_csv = st.file_uploader("Upload your file here", type="csv")
 
-    if user_csv != None:
-        user_csv.seek(0)
-        df = pd.read_csv(user_csv, low_memory=False)
+#     if user_csv != None:
+#         user_csv.seek(0)
+#         df = pd.read_csv(user_csv, low_memory=False)
 
 # llm model
 # llm = OpenAI(temperature=0)
@@ -63,6 +63,24 @@ with st.sidebar:
     # st.caption("**Fri June 6 2:54 PM [ Brain on Sir C🐫rter 🍳 like drugs ] Sike!**")
     st.caption("**<p style='text:align-center'>Fri June 6 2:54 PM NYC Time</p>**", unsafe_allow_html=True) 
     st.caption("*<p style='text:align-center'> KC [Special Memeber♥️💠] </p>*", unsafe_allow_html=True)
+    #Initialize the key in session state if 'clicked' not in st.session_state:
+    if 'clicked' not in st.session_state:
+        st.session_state.clicked={1: False}
+
+    #Function to update the value in session state:
+    def clicked(button):
+        st.session_state.clicked[button]=True
+    st.button("Let's get started", on_click = clicked, args=[1])
+    if st.session_state.clicked[1]:
+        st.header('Exploratory Data Analysis Part')
+        st.subheader('Solution')
+
+        user_csv = st.file_uploader("Upload your file here", type="csv")
+
+        if user_csv != None:
+            user_csv.seek(0)
+            df = pd.read_csv(user_csv, low_memory=False)
+
     if st.button("*Add File*"):
         user_csv = st.file_uploader("Upload your file here", type="csv")
     # st.file_uploader("Upload your file here", type="csv")
