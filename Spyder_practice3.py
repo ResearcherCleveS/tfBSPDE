@@ -20,8 +20,8 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
-from langchain.llms import OpenAI
-from langchain.agents import creat_pandas_dataframe_agent
+from langchain import llms #OpenAI
+from langchain import agents #creat_pandas_dataframe_agent
 from dotenv import load_dotenv, find_dotenv 
 
 st.title("Author ResearcherCleveS 👑")
