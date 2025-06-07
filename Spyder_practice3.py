@@ -20,7 +20,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
-from langchain import llm
+from langchain import llms
 from langchain import agents #creat_pandas_dataframe_agent
 from dotenv import load_dotenv, find_dotenv 
 
@@ -47,7 +47,7 @@ with st.sidebar:
     with st.expander("*KC [Mood♥️💠]*"):
         st.success("*K. Corera AKA KC [Mood♥️💠]*")
     with st.expander("What are the steps of EDA"):
-        st.write(llm('What are the steps of EDA'))
+        st.write(llms('What are the steps of EDA'))
     
 # if st.button("Abstract"):
 # st.success("**Hinton & ResearcherCleveS, KC are Successes!**")
