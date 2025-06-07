@@ -64,7 +64,7 @@ with st.sidebar:
     st.caption("**<p style='text:align-center'>Fri June 6 2:54 PM NYC Time</p>**", unsafe_allow_html=True) 
     st.caption("*<p style='text:align-center'> KC [Special Memeber♥️💠] </p>*", unsafe_allow_html=True)
     if st.button("*Add File*"):
-    user_csv = st.file_uploader("Upload your file here", type="csv")
+        user_csv = st.file_uploader("Upload your file here", type="csv")
     # st.file_uploader("Upload your file here", type="csv")
     st.divider()
     with st.expander("*Mermaid Cup AKA Expander Name*"):
