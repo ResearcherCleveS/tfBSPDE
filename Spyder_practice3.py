@@ -22,9 +22,10 @@ import matplotlib.pyplot as plt
 
 from langchain import llms
 from langchain import agents #creat_pandas_dataframe_agent
-from langchain import creat_pandas_dataframe_agent
 from dotenv import load_dotenv, find_dotenv 
 
+# llm model
+llm = OpenAI(temperature=0)
 st.title("Author ResearcherCleveS 👑")
 if st.button("**Abstract**"):
     st.header("Hinton & ResearcherCleveS are Successes!")
