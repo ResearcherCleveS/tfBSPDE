@@ -20,7 +20,7 @@ import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 #%config InlineBackend.figure_formats='svg'
 
-from langchain import llms
+from langchain_comminty import llms
 from langchain.llms import OpenAI
 from langchain import agents #creat_pandas_dataframe_agent
 from dotenv import load_dotenv, find_dotenv 
