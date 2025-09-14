@@ -50,7 +50,7 @@ from dotenv import load_dotenv, find_dotenv
 
 # llm model
 # llm = OpenAI(temperature=0)
-st.title("Author ResearcherCleveS 👑 I'm back Kaliff fucking off")
+st.title("Author ResearcherCleveS 👑 I'm back Kaliff🍑🍾 fucking off")
 if st.button("**Abstract**"):
     st.header("Hinton & ResearcherCleveS are Successes!")
     st.subheader("*KC [Special Member♥️💠]*")
