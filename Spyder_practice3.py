@@ -50,7 +50,7 @@ from dotenv import load_dotenv, find_dotenv
 
 # llm model
 # llm = OpenAI(temperature=0)
-st.title("$\textsf{Author ResearcherCleveS 👑 & Cleve7777}$")
+st.title($\textsf{"Author ResearcherCleveS 👑 & Cleve7777"}$)
 if st.button("**Abstract**"):
     st.header("Hinton & ResearcherCleveS are Successes!")
     st.subheader("*KC [Special Member♥️💠]*")
